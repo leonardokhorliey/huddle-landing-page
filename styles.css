@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p, a, button {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+h1, h2, h3 {
+    color: rgb(1,36,46)
+}
+
+header {
+    position:absolute;
+    box-sizing: border-box;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+}
+
+header button {
+    background-color: white;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    width: 10rem;
+    border: 0;
+    box-shadow: 2px 2px 8px 2px #888888;
+    color: black;
+}
+
+#main-intro {
+    background: url("images/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 0px 100px;
+    border: 1px solid white;
+}
+
+#main-intro > div {
+    margin: 9.375rem 0 3.25rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main-intro > div > img {
+    width: 55%;
+}
+
+#main-intro > div > div {
+    box-sizing: border-box;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    width: 40%;
+}
+
+#main-intro > div > div > h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    
+}
+
+#main-intro > div > div > p {
+    
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 30px;
+    color: rgb(1,36,46)
+}
+
+#main-intro > div > div > button {
+    background: rgb(254,82,192);
+    color: white;
+    height: 3rem;
+    border-radius: 1.5rem;
+    width: 15rem;
+    border: 0;
+}
+
+#key-sellers {
+    padding: 150px 100px;
+    box-sizing: border-box;
+}
+
+#key-sellers > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.seller {
+    box-sizing: border-box;
+    padding: 50px 30px 50px 10%;
+    box-shadow: 2px 2px 8px 2px #888888;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seller:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.seller > div {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.seller > div > h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.seller > div > p {
+    color: gray;
+}
+
+.seller > div {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.seller img {
+    width: 405px;
+    height: 360px
+}
+
+#floating-cta {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    box-shadow: 2px 2px 8px 2px #888888;
+    width: 450px;
+    margin: 120px auto 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    align-self: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#floating-cta h1 {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px auto 10px auto;;
+}
+
+#floating-cta button {
+    box-sizing: border-box;
+    padding: 0 20px;
+    background: rgb(254,82,192);
+    color: white;
+    height: 3rem;
+    border-radius: 1.5rem;
+    width: 60%;
+    border: 0;
+}
+
+footer {
+    background: rgb(1,36,46);
+    color: white;
+    height: 700px;
+    box-sizing: border-box;
+    padding: 200px 100px 100px 100px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+footer p, a {
+    font-size: 0.75rem;
+}
+
+#footer-logo {
+    filter: brightness(0) invert(1);
+}
+
+.other-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.contact-info {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info:nth-child(1) {
+    width: 30%;
+}
+
+.contact-info:nth-child(4) {
+    width: 20%;
+}
+
+.contact-info > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+
+footer > p {
+    margin-left: auto;
+}
+
+#socials {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    
+}
+
+#socials div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid white;
+    width: 2rem;
+    aspect-ratio: 1;
+    background: transparent;
+    border-radius: 50%;
+    padding: auto;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    button {
+        font-size: 0.75rem;
+    }
+
+
+    #main-intro {
+        padding: 0 50px;
+        background: url("images/bg-hero-mobile.svg");
+    }
+
+    #main-intro > div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        margin: 9rem 0 3.25rem 0;
+    }
+    
+    #main-intro > div > div {
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #main-intro > div > div > h1 {
+        font-size: 1.75rem;
+    }
+
+    #main-intro > div > div > p {
+        font-size: 0.9rem;
+    }
+
+    #main-intro > div > img {
+        width: 100%;
+    }
+
+    #key-sellers {
+        padding: 100px 50px;
+        box-sizing: border-box;
+    }
+
+    .seller {
+        flex-direction: column-reverse;
+        padding: 50px 50px;
+        gap: 30px;
+    }
+
+    .seller > div {
+        width: 100%;
+    }
+
+    .seller:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .seller img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .seller > div {
+        text-align: center;
+    }
+
+    #floating-cta {
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: 50px auto;
+        padding: 20px 10px;
+        width: 400px;
+    }
+
+    footer {
+        height: auto;
+        padding: 100px 50px 50px 50px;
+    }
+
+    .other-info {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-info:nth-child(1) {
+        width: 100%;
+    }
+    
+    .contact-info:nth-child(4) {
+        width: 100%;
+    }
+
+    #socials {
+        margin: auto;
+    }
+
+    footer > p {
+        margin: auto;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    button {
+        font-size: 0.75rem;
+    }
+
+    header img {
+        height: 30%;
+        width: 30%;
+    }
+
+    header button {
+        background-color: white;
+        height: 1.5rem;
+        width: 6rem;
+    }
+
+    #main-intro {
+        padding: 0 50px;
+        background: url("images/bg-hero-mobile.svg");
+    }
+
+    #main-intro > div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        margin: 9rem 0 3.25rem 0;
+    }
+    
+    #main-intro > div > div {
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #main-intro > div > div > h1 {
+        font-size: 1.75rem;
+    }
+
+    #main-intro > div > div > p {
+        font-size: 0.9rem;
+    }
+
+    #main-intro > div > img {
+        width: 100%;
+    }
+
+    #key-sellers {
+        padding: 100px 50px;
+        box-sizing: border-box;
+    }
+
+    .seller {
+        flex-direction: column-reverse;
+        padding: 50px 50px;
+        gap: 30px;
+    }
+
+    .seller > div {
+        width: 100%;
+    }
+
+    .seller:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .seller img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .seller > div {
+        text-align: center;
+    }
+
+    #floating-cta {
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: 50px auto;
+        padding: 20px 10px;
+        width: 80%;
+    }
+
+    footer {
+        height: auto;
+        padding: 100px 50px 50px 50px;
+    }
+
+    .other-info {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-info:nth-child(1) {
+        width: 100%;
+    }
+    
+    .contact-info:nth-child(4) {
+        width: 100%;
+    }
+
+    #socials {
+        margin: auto;
+    }
+
+    footer > p {
+        margin: auto;
+    }
+
+
+}
+
+
+@media screen and (max-width: 375px) {
+    header {
+        padding: 20px 20px;
+    }
+
+    button {
+        font-size: 0.5rem;
+    }
+
+    header img {
+        height: 30%;
+        width: 30%;
+    }
+
+    header button {
+        background-color: white;
+        height: 1.5rem;
+        width: 6rem;
+    }
+
+    #main-intro {
+        padding: 0 20px;
+        background: url("images/bg-hero-mobile.svg");
+    }
+
+    #main-intro > div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        margin: 9rem 0 3.25rem 0;
+    }
+    
+    #main-intro > div > div {
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #main-intro > div > div > h1 {
+        font-size: 1.75rem;
+    }
+
+    #main-intro > div > div > p {
+        font-size: 0.9rem;
+    }
+
+    #main-intro > div > img {
+        width: 100%;
+    }
+
+    #key-sellers {
+        padding: 100px 20px;
+        box-sizing: border-box;
+    }
+
+    .seller {
+        flex-direction: column-reverse;
+        padding: 50px 50px;
+        gap: 30px;
+    }
+
+    .seller > div {
+        width: 100%;
+    }
+
+    .seller:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .seller img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .seller > div {
+        text-align: center;
+    }
+
+    #floating-cta {
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 90%;
+        margin: 50px auto;
+        padding: 20px 10px;
+    }
+
+    footer {
+        height: auto;
+        padding: 100px 20px 50px 20px;
+    }
+
+    .other-info {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-info:nth-child(1) {
+        width: 100%;
+    }
+    
+    .contact-info:nth-child(4) {
+        width: 100%;
+    }
+
+    #socials {
+        margin: auto;
+    }
+
+    footer > p {
+        margin: auto;
+    }
+
+
+}
+
+
